@@ -3,28 +3,31 @@
 /*              seccion del index                  */
 /***************************************************/
 body {
-    margin: 0;
-    padding: 0;  
-    min-height: 100vh;
-    /*display: grid;*/
-    display: flex;
-    flex-wrap: wrap;
-    background: rgb(255, 255, 255);
-    /*background: linear-gradient(to right,rgb(21, 151, 207), rgb(123, 219, 243));*/
     font-family: 'Nanum Gothic', sans-serif; 
+    background: rgb(255, 255, 255);
+
+   
+    /*display: flex;
+    flex-wrap: wrap;
+    background: rgb(255, 255, 255);*/
+    /*background: linear-gradient(to right,rgb(21, 151, 207), rgb(123, 219, 243));*/
+    
+    
 }
+
+main{
+    max-width:800px;
+    width:90%;
+    margin:auto;
+    padding: 40px;
+}
+
 
 .logo{
-    font-family: 'Righteous', cursive;;
+    font-family: 'Righteous', cursive;
+    
 }
 
-/*aside {
-    width: 50%;
-    display: flex;
-    background-color: aquamarine;
-    text-align: justify;
-    flex-wrap: wrap;
-}*/
 
 nav {
     align-self:flex-start;
@@ -33,14 +36,7 @@ nav {
     width: 100%;
 }
 
-section {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    text-align:justify;
-    margin: 0px;
-    padding: 30px; 
-}
+
 
 .menu {
     align-self:flex-start;
@@ -84,6 +80,15 @@ footer {
     color:#eee;
 
 }
+
+.container {
+    display: flex;
+    padding: 10px;
+    width: 100%;
+}
+
+
+
 
 
 /***************************************************/
@@ -135,3 +140,16 @@ h2 {
     flex: 0 0 auto;
     margin: 10px;
 }
+
+/*@media (width <= 600px) {
+    .menu {
+            <input list="menu-items">
+                <datalist id="menu">
+                  <option value="Escuchar"></option>
+                  <option value="Ingresar"></option>
+                  <option value="Registrarse"></option>
+                  <option value="Contacto"></option>
+                </datalist>
+            </input>
+          }
+}*/

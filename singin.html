@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title> Codify </title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel= "stylesheet" href="css/style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Righteous&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/9e18c30f23.js" crossorigin="anonymous"></script>
+<script src="js/formulario.js"></script>
+</head>
+
+
+<body>
+  <main>
+   <form action="#" class="formulario" id="formulario">
+
+   <!--apellido-->
+
+      <div class="formulario__grupo" id="grupo__apellido">
+      <label for="apellido" class="formulario__label"> Apellido </label>
+      <div class="forulario__grupo-input"> 
+         <input type="text" class="formulario__input" name="apellido" placeholder="Quito" />
+         <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        </div>
+      <p class="formulario__input-error">El apellido de contener como minimo dos (2) caracteres</p>
+     </div>
+
+
+
+   
+  <!--nombre-->
+
+      <div class="formulario__grupo" id="grupo__nombre">
+         <label for="nombre" class="formulario__label"> Nombre </label>
+         <div class="forulario__grupo-input"> 
+         <input type="text" class="formulario__input" name="nombre" placeholder="Esteban" />
+         <i class="formulario__validacion-estado fas fa-times-circle"></i>
+         </div>
+         <p class="formulario__input-error">El nombre de contener como minimo tres (3) caracteres</p>
+      </div>
+
+
+<!--nombre de usuario-->
+
+   <div class="formulario__grupo" id="grupo__usuario">
+      <label for="usuario" class="formulario__label"> Nombre de usuario </label>
+      <div class="forulario__grupo-input"> 
+         <input type="text" class="formulario__input" name="usuario" placeholder="Usuario123" />
+         <i class="formulario__validacion-estado fas fa-times-circle"></i>
+      </div>
+      <p class="formulario__input-error">El usuario de ser de 3 a 20 caracteres y contener letras, numeros y _</p>
+   </div>
+
+
+
+<!--correo electronico-->
+      
+         <div class="formulario__grupo" id="grupo__email">
+             <label for="email" class="formulario__label"> Correo electronico </label>
+             <div class="forulario__grupo-input"> 
+              <input type="email" class="formulario__input" name="email" placeholder="ejemplo@codify.com" />
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+         </div>
+            <p class="formulario__input-error">El usuario de ser de 3 a 20 letras y contener letras, numeros y _</p>
+
+        </div>
+
+
+<!--contraseña-->
+
+      <div class="formulario__grupo" id="grupo__password">
+      <label for="password" class="formulario__label"> Contraseña </label>
+      <div class="forulario__grupo-input"> 
+         <input type="password" class="formulario__input" name="password" />
+         <i class="formulario__validacion-estado fas fa-times-circle"></i>
+      </div>
+      <p class="formulario__input-error">contraseña de contener como minimo seis (6) caracteres</p>
+     </div>
+
+
+<!--contraseña 2-->
+
+   <div class="formulario__grupo" id="grupo__password2">
+      <label for="password2" class="formulario__label"> Repita su Contraseña </label>
+      <div class="forulario__grupo-input"> 
+         <input type="password" class="formulario__input" name="password2" />
+         <i class="formulario__validacion-estado fas fa-times-circle"></i>
+      </div>
+      <p class="formulario__input-error">La contraseña no coincide</p>
+   </div>
+
+<!--grupo terminos y condiciones-->
+
+      <div class="formulario__grupo" id="grupos__terminos">
+         <label class="formulario__label">
+         <input class="forulario__checkbox" type="checkbox" name="terminos" id="terminos" />
+         Acepto los Terminos y Condiciones
+         </label>
+      </div>
+      <div class="formulario__mensaje" id="fromulario__mensaje">
+      <p><i class="fas fa-exclamation-circle"></i> <b>Por favor rellene todos los campos</b> </p>
+      </div>
+
+      <div class="formulario__grupo formulario__grupo-btn-enviar">
+      <button type="submit" class="formulario__btn"> Registrarse</button>
+      <p class="formulario__mensaje-exito" id="fromulario__mensaje-exito"> Formulario enviado correctamente!</p>
+      </div>
+   </form>
+ </main>
+ </body>
+</html>
